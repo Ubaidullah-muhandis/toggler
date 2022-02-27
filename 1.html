@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle-menu</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu-toggle" id="menu-toggle"></div>
+        <nav class="open-nav">
+           <div class="close"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menu = document.queryseletor('menu-toggle');
+        const nav = document.querySelector('open-nav');
+        
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+    </script>
+</body>
+</html>
